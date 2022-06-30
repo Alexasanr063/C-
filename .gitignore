@@ -1,0 +1,7 @@
+bin/
+admin/
+config/
+*.sass
+.git/
+.vscode/
+obj/
