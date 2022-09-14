@@ -1,0 +1,30 @@
+using System;
+using System.Text;
+namespace HelloWorld
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            System.Console.WriteLine("Введите число от 10 до 100");
+            int a = Convert.ToInt32(System.Console.ReadLine());
+            if (a < 10 || a > 100)
+            {
+                System.Console.WriteLine("Ошибка");
+            }
+            else
+            {
+                int b = a % 10;
+                if (b == 0)
+                {
+                    System.Console.WriteLine("Ошибка");
+                }
+                else
+                {
+                    int c = a / b;
+                    System.Console.WriteLine(c);
+                }
+            }
+        }
+    }
+}
